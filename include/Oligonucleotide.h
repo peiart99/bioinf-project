@@ -3,6 +3,7 @@
 #include <iostream>
 #include <vector>
 #include <memory>
+#include <algorithm>
 #include "../include/Oligonucleotide.h"
 
 class Oligonucleotide {
@@ -13,7 +14,16 @@ private:
 
 public:
     explicit Oligonucleotide(std::string _data);
+    void addConnected(std::shared_ptr<Oligonucleotide> oligo, int connection_level);
     void printData();
+    void printConnections();
+    void sortConnectionsByWeight();
+    std::string getData();
+    int getConnectionNumber();
+    bool bestConnectionExists();
+    bool checkIfUsed();
+    void markAsUsed();
+    std::shared_ptr<Oligonucleotide> getBestConnection();
 };
 
 

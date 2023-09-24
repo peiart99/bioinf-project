@@ -9,4 +9,7 @@ add_executable(bioinf_project main.cpp
         include/Spectrum.h
         src/Spectrum.cpp
         include/Oligonucleotide.h
-        src/Oligonucleotide.cpp)
+        src/Oligonucleotide.cpp
+        include/Greedy.h
+        src/Greedy.cpp
+)
