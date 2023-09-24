@@ -12,7 +12,7 @@ void Spectrum::generateOligonucleotides() {
     {
         std::string oligo {DNA.substr(i, oligo_length)};
         std::cout << oligo << std::endl;
-        if(unique_oligos.find(oligo) == unique_oligos.end())
+        if(unique_oligos.find(oligo) != unique_oligos.end())
         {
             std::cout << "Duplicate" << std::endl;
         }else
